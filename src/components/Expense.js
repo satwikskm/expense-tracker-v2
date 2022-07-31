@@ -188,7 +188,7 @@ const Expense = () => {
     }
 
     useEffect(()=>{
-        console.log(state)
+        
         localStorage.setItem("key",JSON.stringify(state.transaction))
         dispatch({type:'EXPENSE',payload:state.transaction.filter((item)=>item.amount < 0).reduce((a,b)=>a+Number(b.amount),0)})
         dispatch({type:'INCOME',payload:state.transaction.filter((item)=>item.amount > 0).reduce((a,b)=>a+Number(b.amount),0)})
