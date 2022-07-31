@@ -209,7 +209,7 @@ const Expense = () => {
         <h1>Expense Tracker</h1>
         
        {console.log(state.transaction.filter((item)=>item.amount < 0).reduce((a,b)=>a+Number(b.amount),0))}
-        <h1>{state.income + state.expense}</h1>
+        <h2>Balance: {state.income + state.expense}</h2>
    
         <Tracker inc={state.income} exp={state.expense} />
         <h4>History</h4>
@@ -224,9 +224,9 @@ const Expense = () => {
         })}
         
        
-        <section onSubmit={submitHandler}>
-            <h4>Add Transaction</h4>
-            <h5>Text</h5>
+        <section onSubmit={submitHandler} className="container">
+            <h2>Add Transaction</h2>
+            <h3 className='title'>Transcation Header</h3>
             <form >
             <input 
             type="text"
@@ -237,8 +237,9 @@ const Expense = () => {
             }}
             
              />
-            <h5>Amount(Negative - expense, Positive +expense) </h5>
+            <h3 className='title'>Amount(Negative - expense, Positive +expense) </h3>
             <div className="amount">
+
             <input 
             type="text"
             placeholder='Enter Amount' 
