@@ -1,7 +1,7 @@
 import React from 'react'
 import './item.css'
 const Item = (prop) => {
-  const {header , type,amount,id}=prop
+  const {header ,amount,id}=prop
   
   
   const gettype = (amount) =>{
