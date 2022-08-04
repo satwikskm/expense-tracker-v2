@@ -1,4 +1,50 @@
-# Getting Started with Create React App
+
+# Expense Tracker (New)
+
+Its a extension to the expense tracker that was previously done using HTML,CSS,JAVASCRIPT 
+
+
+
+## Installation
+
+Install Express Tracker with npm
+
+```bash
+  cd express-tracker
+  npm install 
+  npm start 
+  
+```
+    
+## Documentation
+
+Previously the script was using html css and javascript .
+
+That have been modified using React hooks.
+
+### Part 1:
+
+-- At first step the componensts are decided . 
+
+-- Three components are taken into consideration .
+
+    1. Main screen
+    2. Item
+    3. Tracker 
+
+-- The main screen conains the reducer hooks that controlls the entries 
+-- Then they are forwarded to child components to render on the screen
+
+### Part 2:
+
+-- Here the arrays are stored in local storage followed by the loaded into the state defined in reducer to get the existing array of transcation
+
+
+
+
+## React Predefined Documentation
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
